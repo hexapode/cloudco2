@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <style>
+            .header {
+                width : 100%;
+                background-color : #F35C9F;
+                color : #fff;
+                font-weight: bold;
+                font-size : 32px;
+                padding : 16px;
+                margin : 0px;
+            }
+
+            .content {
+                padding : 16px;
+            }
+
+            body {
+                margin : 0px;
+                width :  400px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class='header'>
+            Cloud CO2
+        </div>
+        <div class='content'>
+            <div>Your Cloud (not your computer), Network and server energy consumption in Co2 mass equivalent</div>
+            <br/>
+            <div id='data' style='width : 300px'>
+                This page : <span id='page'></span> CO2 <br/>
+                This session : <span id='session'></span> CO2 <br/>
+                All Time : <span id='ever'></span> CO2 <br/>
+            </div>
+            <br/>
+            <div>Badge show :
+                <select id='display'>
+                    <option selected value="page">Current Page</option>
+                    <option value="session">This Session</option>
+                    <option value="ever">All Time</option>
+                </select>
+            </div>
+            <div><i>Experimental data!</i></div>
+        </div>
+        
+        <script src="popup.js"></script>

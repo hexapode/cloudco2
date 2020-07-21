@@ -1,0 +1,23 @@
+{
+    "name": "Cloud CO2",
+    "version": "1.1",
+    "description": "Analyse website CO2 in real time!",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "permissions": ["tabs", "storage",  "activeTab", "webRequest", "webNavigation", "<all_urls>"],
+    "browser_action" : {
+        "default_popup": "popup.html",
+        "default_icon": {                   
+            "16": "assets/icon.png",
+            "24": "assets/icon.png",
+            "32": "assets/icon.png"
+          },
+        "default_title": "Cloud Co2" 
+    },
+    "icons" :  {
+        "64" : "assets/storeIcon.png"
+    }
+}
