@@ -1,6 +1,6 @@
 {
     "name": "Cloud CO2",
-    "version": "1.1",
+    "version": "1.2",
     "description": "Analyse website CO2 in real time!",
     "manifest_version": 2,
     "background": {
