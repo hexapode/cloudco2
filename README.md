@@ -3,7 +3,12 @@ A web extension to guesstimate your browsing co2 emissions
 
 ## Installation
 
+
+### From Source
 Clone this repository then load it as a non-package extension in google chrome.
+
+### From CRX file
+Download the crx (package) extension from the release tab and install it.
 
 ## Contribution
 
