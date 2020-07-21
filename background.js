@@ -10,6 +10,10 @@ const TAB_DB = {};
 
 let TOTAL_CONSUMPTION_THIS_SESSION = 0;
 
+if (!localStorage.total || localStorage.total == "NaN") {
+    localStorage.total = 0;
+}
+
 function onBeforeNavigate({tabId, timeStamp, url, parentFrameId}) {
   
     if (!TAB_DB[tabId]) {
@@ -159,8 +163,7 @@ function onCompleted({tabId, requestId, timeStamp, fromCache}) {
 
     let consumption = getRessourceConsumption(ressource);
     TOTAL_CONSUMPTION_THIS_SESSION += consumption;
-    localStorage.total = parseFloat(localStorage.total) + consumption;
-
+    localStorage.total = parseFloat(localStorage.total) + parseFloat(consumption);
 
 }
 
